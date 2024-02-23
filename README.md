@@ -4,7 +4,7 @@
 
  To run example:
 
-+ Open `SavableSFSample/SampleScene`
++ Open `SavableSFSample/SavableSFSampleScene`
 + Make sure that the `StorySelectionCanvas/StorySelectionPanel/ScenarioSelectionButtonParent` object in the Hierarchy window has two objects, and the two scripts `Quiz` and `Quiz_Alt` are respectively attached to the `ScenarioScript` property of the `ScenarioSelectionButton` component in those objects
 + Enter the play mode
 

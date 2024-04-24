@@ -5,8 +5,6 @@ namespace SavableSFSample
 {
     public class PrimitiveDecoder : IReflectable
     {
-        private static readonly string HalfSpaceSymbol = "<sp>";
-
 		[DecoderMethod]
 		[Description("A decoder for the 'int' type.")]
 		public int ConvertToInt(string input)
@@ -30,10 +28,8 @@ namespace SavableSFSample
 
 		[DecoderMethod]
 		[Description("A decoder for the 'string' type.")]
-		[Description("The symbol '<sp>' will be replaced by a half-width white space.")]
 		public string ConvertToString(string input)
         {
-            input = input.Replace(HalfSpaceSymbol, " ");
             return input;
         }
     }

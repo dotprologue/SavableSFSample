@@ -53,6 +53,7 @@ namespace SavableSFSample
         [Snippet("{${2:Line}}")]
 		public async UniTask WriteDialogueAsync(string characterName, string dialogueLine, CancellationToken cancellationToken)
 		{
+            dialogueLine = dialogueLine.Replace(SFText.LineBreakSymbol, " ");
             logStacker.StackLog(characterName, dialogueLine, true);
 			dialogueBox.SetActive(true);
 			characterNameText.text = characterName;

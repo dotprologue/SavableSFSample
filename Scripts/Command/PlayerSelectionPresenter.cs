@@ -73,8 +73,8 @@ namespace SavableSFSample
         [Snippet("- Jump to {${2:Label1}}")]
         [Snippet("Selection 2: {${3:Selection2}}")]
         [Snippet("- Jump to {${4:Label2}}")]
-        [Snippet("Selection 3: {${3:Selection3}}")]
-        [Snippet("- Jump to {${4:Label3}}")]
+        [Snippet("Selection 3: {${5:Selection3}}")]
+        [Snippet("- Jump to {${6:Label3}}")]
         public UniTask BranchBasedOnThreeSelectionsAsync(string selection1, string label1, string selection2, string label2, string selection3, string label3, CancellationToken cancellationToken)
         {
             return BranchBasedOnSelectionsAsync(new KeyValuePair<string, string>[]
